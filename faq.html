@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frog Print</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/logo/Asset 6.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <nav class="relative flex">
+        <a href="./index.html"><img src="./images/logo/logo.png" alt=""></a>
+
+        <ul class="flex">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contacts.html">Contacts</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+        </ul>
+        <a class="btn btn-blue" href="./contacts.html">Get a Quote</a>
+    </nav>
+    <section>
+        <h3>
+            Digital Printing Services
+        </h3>
+        <div class="flex cards">
+            <div class="card-item">
+                <a href=""><div class="card-img"></div></a>     
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ipsa.</p>
+            </div>
+            <div class="card-item">
+                <a href="#"><div class="card-img"></div></a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ipsa.</p>
+            </div>
+            <div class="card-item">
+                <a href="#"><div class="card-img"></div></a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ipsa.</p>
+            </div>
+            <div class="card-item">
+                <a href="#"><div class="card-img"></div></a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ipsa.</p>
+            </div>
+            <div class="card-item">
+                <a href="#"><div class="card-img"></div></a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ipsa.</p>
+            </div>
+            <div class="card-item">
+                <a href="#"><div class="card-img"></div></a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, ipsa.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="flex-footer">
+            <div class="footer-style contact">
+              <span>Contact</span>
+              <ul>
+                <li>1234 Tabang Guiguinto</li>
+                <li>Bulacan, Philippines</li>
+                <li>frogprint@gmail.com</li>
+                <li>123-456-7890</li>
+              </ul>
+            </div>
+    
+            <div class="footer-style email-us">
+              <span>JOIN US</span>
+              <p>Subscribe to receiv our offers in preview and enjoy 10% discount on your first order</p>
+              <span class="emailus">Email:</span>
+              <div class="flex email">
+                
+                <input class="email-input" type="email" name="" id="">
+                <input class="btn btn-email" type="submit" value="Submit">
+              </div>
+              
+            </div>
+            <div class="footer-style menu">
+                <span>Menu</span>
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./services.html">Services</a></li>
+                  <li><a href="./contacts.html">Contacts Us</a></li>
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./faq.html">FAQ</a></li>
+                </ul>
+              </div>
+              <div class="footer-style follow">
+                <span>Follow Us</span>
+                <ul>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Instagram</a></li>
+                  <li><a href="#">Linkiden</a></li>
+                  <li><a href="#">Twitter</a></li>
+                </ul>
+              </div>
+          </div>
+    </footer>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-120px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+</html>
