@@ -10,6 +10,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p,
 a,
 label,
@@ -34,7 +35,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 800px;
 }
 
 #navbar {
@@ -78,6 +79,7 @@ nav ul li a {
     position: absolute;
     top: 190px;
     left: 100px;
+    height: 100%;
 }
 
 .main-text h1 {
@@ -91,7 +93,7 @@ nav ul li a {
     font-size: 40px;
     margin: 0;
     padding-bottom: 50px;
-    color: rgb(82, 157, 255);
+    color: aqua;
 }
 
 .main-text .btn-light {
@@ -105,7 +107,9 @@ nav ul li a {
     font-weight: 500;
     border-radius: 30px;
 }
-
+nav ul li a:active {
+    color: blue;
+}
 nav ul li a:hover,
 nav ul li a:active {
     color: blue;
@@ -157,7 +161,7 @@ nav ul li a:active {
 
 section {
     position: relative;
-    background-color:#282e34;
+    background-color: #282e34;
     min-height: 100%;
 }
 
@@ -170,7 +174,7 @@ section h3 {
 }
 
 .cards {
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     padding-bottom: 50px;
 }
@@ -178,16 +182,94 @@ section h3 {
 .card-item {
     width: 25%;
     text-align: center;
+    background-color: #282e34;
+    transition: 0.1s;
 }
-.card-item p {
-    color: white;
+.card-item:hover {
+    box-shadow: 0px 0px 14px 0px rgba(171,170,170,0.54);
+-webkit-box-shadow: 0px 0px 14px 0px rgba(171,170,170,0.54);
+-moz-box-shadow: 0px 0px 14px 0px rgba(171,170,170,0.54);
 }
-.card-img {
-    background-image: url(http://placeimg.com/640/480/animals);
+
+.card-item h4 {
+    color: aqua;
+}
+.card-img1 {
+    background-image: url(./images/services/Business-Card.jpg);
     background-size: cover;
     background-position: center;
     min-height: 200px;
 
+}
+.card-img1:hover {
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-img2 {
+    background-image: url(./images/services/catalogue-magazine.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+
+}
+.card-img2:hover {
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-img3 {
+    background-image: url(./images/services/invitation.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+
+}
+.card-img3:hover {
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-img4 {
+    background-image: url(./images/services/pin.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+
+}
+.card-img4:hover {
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-img5 {
+    background-image: url(./images/services/Ticket.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+
+}
+.card-img5:hover {
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-img6 {
+    background-image: url(./images/services/trifold-brochure.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+
+}
+.card-img6:hover {
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .parallax {
@@ -197,7 +279,15 @@ section h3 {
     background-size: cover;
     background-attachment: fixed;
 }
-
+.card-why {
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.card-item-why {
+    width: 25%;
+    text-align: center;
+}
 .why-choose {
     height: 100%;
 }
@@ -236,6 +326,7 @@ img.icon {
 
 .why-choose h3 {
     font-size: 20px;
+    color: aqua;
 
 }
 
@@ -366,13 +457,15 @@ form {
         "message message message"
         "btn-dark btn-dark btn-dark";
 }
+
 form label {
     display: inline-block;
     padding-bottom: 20px;
     width: 100%;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 95%;
     border: none;
     border-bottom: 2px solid rgb(181, 179, 179);
@@ -418,14 +511,89 @@ form input, form textarea {
     border: none;
     transition: 0.3s;
 }
-form textarea:focus,form input.effect:focus{
+
+form textarea:focus,
+form input.effect:focus {
     outline: none;
     padding: 2px;
     width: 100%;
     border-bottom: 2px solid black;
 }
+
 input:focus {
     outline: none;
+}
+.about-us {
+    width: 70%;
+}
+section .about {
+    color: white;
+    margin: 0;
+    font-size: 50px;
+    padding: 50px;
+}
+section .about-sub {
+    text-align: left;
+    padding-left: 30px;
+    color: aqua;
+}
+.about-us p {
+    color: white;
+    margin: 0;
+    padding: 0 0 50px 30px;
+}
+main {
+    background-color: #282e34;
+}
+.faq-heading{
+    border-bottom: rgb(255, 255, 255);
+    padding: 40px 60px;
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+.faq-container{
+display: flex;
+flex-direction: column;
+}
+.hr-line{
+  width: 100%;
+  
+}
+
+.faq-page {
+    color: rgb(253, 252, 252);
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 0;
+}
+.faq-body{
+   width: 50%; 
+   padding: auto;
+   
+}
+.faq-body p {
+    padding-left: 20px;
+}
+.faq-body {
+    color: rgb(236, 234, 234);
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
 }
 @media screen and (max-width: 1080px) {
     nav a.btn {
@@ -442,7 +610,6 @@ input:focus {
     nav img {
         margin-top: 30px;
     }
-
     nav ul {
         margin: auto;
 
