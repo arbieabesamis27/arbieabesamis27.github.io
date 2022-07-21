@@ -112,7 +112,10 @@ nav ul li a {
 nav ul li a:active {
     color: blue;
 }
-
+.menu ul li .actived,
+nav ul li .actived {
+    color: aqua;
+}
 nav ul li a:hover,
 nav ul li a:active {
     color: blue;
@@ -724,7 +727,6 @@ main {
     -moz-box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.33);
     
 }
-
 @media screen and (max-width: 1024px) {
     header {
         min-height: 600px;
@@ -768,6 +770,13 @@ main {
     .main-text h2 {
         font-size: 30px;
     }
+    .faq-body {
+        width: 70%;
+    }
+
+    .product span {
+        width: 80%;
+    }
 
 }
 
@@ -792,7 +801,10 @@ main {
         align-items: center;
         display: none;
     }
-
+    nav .relative,
+    nav .flex  {
+        display: none;
+    }
     .main-text {
         position: relative;
         top: 170px;
@@ -869,8 +881,57 @@ main {
         width: 100%;
         padding-left: 20px;
     }
+    section .about {
+        font-size: 40px;
+    }
+    section .about-sub {
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+        text-align: center;
+    }
+    section .about-us p {
+        padding: 20px 0;
+    }
+    .about-us {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .contact-us h2 {
+        padding: 30px 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .faq-heading {
+        font-size: 40px;
+    }
+    .faq-page {
+        font-size: 20px;
+    }
+    .faq-body {
+        width: 80%;
+    }
+    .product span {
+        font-size: 18px;
+        width: 80%;
+    }
+    .product p {
+        font-size: 15px;
+    }
+
 }
 @media screen and (max-width: 426px) {
+    .topnav a.icon {
+        font-size: 30px;
+    }
+    .actives img {
+        height: 40px;
+    }
     .main-text {
         top: 140px;
         left: 30px;
@@ -914,9 +975,19 @@ main {
     .flex-footer {
         display: grid;
         grid-template-areas: 
-            "contact menu follow"
-            "join join join"
+        "follow menu"
+        "contact contact"
+        "join join"
         ;
+    }
+    .flex-footer {
+        column-gap: 30px;
+    }
+    .footer-style {
+        margin-left: 10px;
+    }
+    .email-us {
+        max-width: 90%;
     }
     .contact {
         grid-area: contact;
@@ -943,15 +1014,61 @@ main {
         flex-grow: 1;
         border-radius: 30px;
     }
+    section .about {
+        font-size: 35px;
+    }
+    section .about-sub {
+        font-size: 20px;
+    }
+    section .about-us p {
+        font-size: 15px;
+        padding: 20px 0;
+    }
+    form {
+        gap: 20px;
+    justify-content: space-around;
+    grid-template-areas:
+        "firstName lastName"
+        "email phone"
+        "job subject"
+        "message message"
+        "btn-dark btn-dark";
+    }
+    .faq-heading {
+        font-size: 30px;
+    }
+    .faq-page {
+        font-size: 18px;
+    }
+    .faq-body {
+        font-size: 15px;
+        width: 100%;
+    }
+    .product span {
+        font-size: 18px;
+        width: 90%;
+    }
+    .product p {
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 376px) {
     .flex-footer {
         display: grid;
         grid-template-areas: 
-            "contact menu"
-            "follow follow"
+            "follow menu"
+            "contact contact"
             "join join"
         ;
+    }
+    .flex-footer {
+        column-gap: 30px;
+    }
+    .footer-style {
+        margin-left: 10px;
+    }
+    .email-us {
+        max-width: 90%;
     }
     .contact {
         grid-area: contact;
@@ -976,5 +1093,66 @@ main {
     .email-input {
         padding: 20px 30px;
         border-radius: 30px;
+    }
+    section .about {
+        font-size: 30px;
+    }
+    section .about-sub {
+        font-size: 15px;
+    }
+    section .about-us p {
+        font-size: 10px;
+        padding: 20px 0;
+    }
+    .footer-style {
+        padding-left: 0;
+    }
+    .faq-heading {
+        font-size: 25px;
+    }
+    .faq-page {
+        font-size: 15px;
+    }
+    .faq-body {
+        font-size: 10px;
+        width: 100%;
+    }
+    .product span {
+        font-size: 18px;
+        width: 80%;
+    }
+    .product p {
+        font-size: 15px;
+    }
+    .product span {
+        font-size: 16px;
+        width: 100%;
+    }
+    .product p {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .topnav a.icon {
+        font-size: 25px;
+    }
+    .actives img {
+        height: 35px;
+    }
+    .contact-us h2 {
+        font-size: 30px;
+    }
+    form {
+        gap: 20px;
+    justify-content: space-around;
+    grid-template-areas:
+        "firstName"
+        "lastName"
+        "email"
+        "phone"
+        "job"
+        "subject"
+        "message"
+        "btn-dark";
     }
 }
