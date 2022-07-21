@@ -36,6 +36,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     min-height: 800px;
+    overflow: hidden;
 }
 
 #navbar {
@@ -49,11 +50,11 @@ nav {
     align-items: center;
     width: 100%;
     padding: 10px 30px;
-    gap: 30px;
+    gap: 20px;
 }
 
 nav img {
-    height: 70px;
+    height: 60px;
 }
 
 nav ul {
@@ -107,9 +108,11 @@ nav ul li a {
     font-weight: 500;
     border-radius: 30px;
 }
+
 nav ul li a:active {
     color: blue;
 }
+
 nav ul li a:hover,
 nav ul li a:active {
     color: blue;
@@ -160,7 +163,6 @@ nav ul li a:active {
 
 
 section {
-    position: relative;
     background-color: #282e34;
     min-height: 100%;
 }
@@ -185,15 +187,17 @@ section h3 {
     background-color: #282e34;
     transition: 0.1s;
 }
+
 .card-item:hover {
-    box-shadow: 0px 0px 14px 0px rgba(171,170,170,0.54);
--webkit-box-shadow: 0px 0px 14px 0px rgba(171,170,170,0.54);
--moz-box-shadow: 0px 0px 14px 0px rgba(171,170,170,0.54);
+    box-shadow: 0px 0px 14px 0px rgba(171, 170, 170, 0.54);
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(171, 170, 170, 0.54);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(171, 170, 170, 0.54);
 }
 
 .card-item h4 {
     color: aqua;
 }
+
 .card-img1 {
     background-image: url(./images/services/Business-Card.jpg);
     background-size: cover;
@@ -201,6 +205,7 @@ section h3 {
     min-height: 200px;
 
 }
+
 .card-img1:hover {
     background-size: 400px;
     background-repeat: no-repeat;
@@ -214,6 +219,7 @@ section h3 {
     min-height: 200px;
 
 }
+
 .card-img2:hover {
     background-size: 400px;
     background-repeat: no-repeat;
@@ -227,6 +233,7 @@ section h3 {
     min-height: 200px;
 
 }
+
 .card-img3:hover {
     background-size: 400px;
     background-repeat: no-repeat;
@@ -240,6 +247,7 @@ section h3 {
     min-height: 200px;
 
 }
+
 .card-img4:hover {
     background-size: 400px;
     background-repeat: no-repeat;
@@ -253,6 +261,7 @@ section h3 {
     min-height: 200px;
 
 }
+
 .card-img5:hover {
     background-size: 400px;
     background-repeat: no-repeat;
@@ -266,6 +275,7 @@ section h3 {
     min-height: 200px;
 
 }
+
 .card-img6:hover {
     background-size: 400px;
     background-repeat: no-repeat;
@@ -279,15 +289,18 @@ section h3 {
     background-size: cover;
     background-attachment: fixed;
 }
+
 .card-why {
     gap: 30px;
     justify-content: center;
     padding-bottom: 50px;
 }
+
 .card-item-why {
     width: 25%;
     text-align: center;
 }
+
 .why-choose {
     height: 100%;
 }
@@ -323,7 +336,9 @@ img.icon {
 .why-choose p {
     text-align: center;
 }
-
+.why-choose span {
+    font-size: 25px;
+}
 .why-choose h3 {
     font-size: 20px;
     color: aqua;
@@ -392,7 +407,7 @@ footer {
 }
 
 .follow {
-    width: 10%;
+    width: 15%;
 }
 
 .footer-style p {
@@ -408,7 +423,7 @@ footer {
     font-size: 20px;
     font-weight: 500;
     border: none;
-    margin-right: 50px;
+    margin-right: 10px;
     margin-left: 30px;
     transition: 0.3s;
 }
@@ -523,42 +538,50 @@ form input.effect:focus {
 input:focus {
     outline: none;
 }
+
 .about-us {
     width: 70%;
 }
+
 section .about {
     color: white;
     margin: 0;
     font-size: 50px;
     padding: 50px;
 }
+
 section .about-sub {
     text-align: left;
     padding-left: 30px;
     color: aqua;
 }
+
 .about-us p {
     color: white;
     margin: 0;
     padding: 0 0 50px 30px;
 }
+
 main {
     background-color: #282e34;
 }
-.faq-heading{
+
+.faq-heading {
     border-bottom: rgb(255, 255, 255);
     padding: 40px 60px;
     font-size: 50px;
     color: white;
     margin: 0;
 }
-.faq-container{
-display: flex;
-flex-direction: column;
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
 }
-.hr-line{
-  width: 100%;
-  
+
+.hr-line {
+    width: 100%;
+
 }
 
 .faq-page {
@@ -571,20 +594,24 @@ flex-direction: column;
     transition: 0.4s;
     margin: 0;
 }
-.faq-body{
-   width: 50%; 
-   padding: auto;
-   
+
+.faq-body {
+    width: 50%;
+    padding: auto;
+
 }
+
 .faq-body p {
     padding-left: 20px;
 }
+
 .faq-body {
     color: rgb(236, 234, 234);
     padding: 0 18px;
     display: none;
     overflow: hidden;
 }
+
 .faq-page:after {
     content: '\02795';
     font-size: 13px;
@@ -592,44 +619,362 @@ flex-direction: column;
     float: right;
     margin-left: 5px;
 }
+
 .active:after {
     content: "\2796";
 }
-@media screen and (max-width: 1080px) {
+
+.product {
+    padding: 50px 0;
+}
+
+.product img {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.product span {
+    display: block;
+    color: aqua;
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.product p {
+    color: white;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: blue;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #282e34;
+    display: none;
+}
+
+.topnav img {
+    height: 50px;
+    position: absolute;
+    display: block;
+    left: 10px;
+    top: 10px;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+}
+
+.topnav a.icon {
+    background-color: #282e34;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 36px;
+}
+
+.topnav a:hover {
+    color: blue;
+}
+
+.actives {
+    height: 70px;
+    box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.33);
+    -webkit-box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.33);
+    
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        min-height: 600px;
+    }
+
+    nav {
+        gap: 0;
+    }
+
     nav a.btn {
         display: none;
     }
-}
-
-@media screen and (max-width: 893px) {
-    nav {
-        justify-content: center;
-        align-items: center;
-    }
 
     nav img {
-        margin-top: 30px;
+        height: 50px;
     }
+
     nav ul {
-        margin: auto;
+        margin-left: auto;
+        background-color: black;
+        list-style: none;
+        padding: 15px 25px;
+        border-radius: 30px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding-right: 30px;
 
     }
 
     .main-text {
-        position: absolute;
-        top: 250px;
-        left: 100px;
+        top: 180px;
+        left: 80px;
     }
 
     .main-text h1 {
-        font-size: 60px;
+        font-size: 65px;
     }
 
     .main-text h2 {
         font-size: 30px;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .topnav {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
     #navbar {
+        display: none;
+    }
+
+    header {
+        min-height: 600px;
+    }
+
+    nav {
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .main-text {
         position: relative;
+        top: 170px;
+        left: 60px;
+    }
+    .main-text .btn-blue {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+    .main-text .btn-light {
+        padding: 15px 25px;
+        font-size: 14px;
+    }
+    .main-text h1 {
+        font-size: 60px;
+    }
+
+    .main-text h2 {
+        font-size: 20px;
+    }
+
+    section {
+        overflow: hidden;
+    }
+
+    .parallax {
+        overflow: hidden;
+    }
+
+    footer {
+        overflow: hidden;
+    }
+    .card-item {
+        width: 45%;
+    }
+    .card-why {
+        width: 99%;
+        margin: auto;
+        gap: 30px;
+    }
+    .card-item-why {
+        width: 32%;
+    }
+    .card-item-why h3{
+        font-size: 18px;
+    }
+    .card-item-why p{
+        font-size: 15px;
+    }
+    .flex-footer {
+        display: grid;
+        grid-template-areas: 
+            "contact menu follow"
+            "join join join"
+        ;
+    }
+    .contact {
+        grid-area: contact;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .email-us {
+        grid-area: join;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .menu {
+        grid-area: menu;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .follow {
+        grid-area: follow;
+        width: 100%;
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 426px) {
+    .main-text {
+        top: 140px;
+        left: 30px;
+    }
+    .main-text h1{
+        font-size: 35px;
+    }
+    .main-text h2 {
+        font-size: 18px;
+        width: 90%;
+    }
+    header {
+        min-height: 500px;
+    }
+    .main-text .btn-light {
+        display: inline-block;
+        margin-top: 30px;
+        margin-left: 0;
+        margin-right: 100px;
+    }
+    section h3 {
+        font-size: 22px;
+    }
+    .card-item {
+        width: 80%;
+    }
+    .why-choose {
+        text-align: center;
+    }
+    .why-choose span {
+        background-color: transparent;
+        display:inline-block;
+        padding: 30px;
+        font-weight: bold;
+        margin: 0;
+        color: white;
+    }
+    .why-choose .card-item-why {
+        width: 90%;
+    }
+    .flex-footer {
+        display: grid;
+        grid-template-areas: 
+            "contact menu follow"
+            "join join join"
+        ;
+    }
+    .contact {
+        grid-area: contact;
+        width: 100%;
+    }
+    .email-us {
+        grid-area: join;
+        width: 100%;
+    }
+    .menu {
+        grid-area: menu;
+        width: 100%;
+    }
+    .follow {
+        grid-area: follow;
+        width: 100%;
+    }
+    .btn-email {
+        margin-top: 10px;
+    }
+    
+    .email-input {
+        padding: 20px 30px;
+        flex-grow: 1;
+        border-radius: 30px;
+    }
+}
+@media screen and (max-width: 376px) {
+    .flex-footer {
+        display: grid;
+        grid-template-areas: 
+            "contact menu"
+            "follow follow"
+            "join join"
+        ;
+    }
+    .contact {
+        grid-area: contact;
+        width: 100%;
+    }
+    .email-us {
+        grid-area: join;
+        width: 100%;
+    }
+    .menu {
+        grid-area: menu;
+        width: 100%;
+    }
+    .follow {
+        grid-area: follow;
+        width: 100%;
+    }
+    .btn-email {
+        margin-top: 10px;
+    }
+    
+    .email-input {
+        padding: 20px 30px;
+        border-radius: 30px;
     }
 }
