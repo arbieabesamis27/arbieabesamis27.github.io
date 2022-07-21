@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frog Print</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./images/logo/Asset 6.png">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-</head>
-
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frog Print</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./images/logo/Asset 6.png">
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+      </head>
+      
+      <body>
+        <div class="topnav">
+          <a href="./index.html" class="actives"><img src="./images/logo/logo.png" alt=""></a>
+          <div id="myLinks">
+            <a href="./index.html">Home</a>
+            <a href="./services.html">Services</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contacts.html">Contacts</a>
+            <a href="./faq.html">FAQ</a></li>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
     <nav class="relative flex">
         <a href="./index.html"><img src="./images/logo/logo.png" alt=""></a>
 
@@ -22,7 +36,7 @@
             <li class="dropdown"><a class="dropbtn" href="./services.html">Services</a>
                 <div class="dropdown-content">
                     <a href="./service.invitation.html">Invitational Card</a>
-                    <a href="./service-card.html">Business Card</a>
+                    <a class="actived" href="./service-card.html">Business Card</a>
                     <a href="./service-brochure.html">Brochure</a>
                     <a href="./service.ticket.html">Events Ticket</a>
                     <a href="./service-flyer.html">Flyers</a>
@@ -44,7 +58,7 @@
             <span>First impressions do last, especially when dealing with clients. So refrain from writing down your
                 contact details on a piece of paper and have your own custom business cards. After all, you are a
                 professional.</span>
-            <p>Here at Printixels, it is among our missions to provide quality, custom-printed business cards or calling
+            <p>Here at Frog Print, it is among our missions to provide quality, custom-printed business cards or calling
                 cards using a variety of papers, designs, and specialty finishes. We will create your own personalized
                 calling cards that fit your brand and style.
             </p>
@@ -97,15 +111,23 @@
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-120px";
-            }
-            prevScrollpos = currentScrollPos;
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-120px";
+          }
+          prevScrollpos = currentScrollPos;
         }
-    </script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
 </body>
 
 </html>
